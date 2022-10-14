@@ -4,10 +4,12 @@ include_once 'helpers/session_helper.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php include_once "libraries/head.php"; ?>
     <link rel="stylesheet" href="template/css/style_log.css" type="text/css">
 </head>
+
 <body>
     <?php include_once "libraries/header.php"; ?>
     <nav class="navbar navbar-light justify-content-center fs3 mb-5" style="background-color: #00A8CC;">
@@ -20,13 +22,14 @@ include_once 'helpers/session_helper.php';
         </div>
         <div class="container d-flex justify-content-center">
             <form class="form__addproduct" action="" method="post" style="width:31vw; min-width:300px;">
+                <input type="hidden" name="type" value="addProduct">
                 <div class="row">
                     <label class="form-label">Product Name:</label>
-                    <input type="text" class="form-control" name="name_p" required>
+                    <input type="text" class="form-control" name="name_p" placeholder="Required" required>
                     <label class="form-label">Product Description:</label>
-                    <textarea rows=2 class="form-control" name="description_p"></textarea>
+                    <textarea rows=2 class="form-control" name="description_p" placeholder="Required" required></textarea>
                     <label class="form-label">Product Category:</label>
-                    <input type="text" class="form-control" name="category_p">
+                    <input type="text" class="form-control" name="category_p" placeholder="Required" required>
                 </div>
                 <div class="row">
                     <div class="col-4">
@@ -36,6 +39,15 @@ include_once 'helpers/session_helper.php';
                     <div class="col-4">
                         <label class="form-label-p">Product Sell Price:</label>
                         <input type="text" class="form-control" name="sell_price_p">
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label">Product Available:</label>
+                            <div>
+                                <input type="radio" id="yes" name="availability_p" value="Available">
+                                <label class="availability">YES</label>
+                                <input type="radio" id="no"  name="availability_p" value="Not Available">
+                                <label class="availability">NO</label>
+                            </div>
                     </div>
                 </div>
                 <div class="row">
@@ -48,8 +60,7 @@ include_once 'helpers/session_helper.php';
                         <input type="text" class="form-control" name="stock_reserved_p">
                     </div>
                     <div class="col-4">
-                        <label class="form-label">Product Availability:</label>
-                        <input type="text" class="form-control" name="availability_p">
+
                     </div>
                     <div class="row">
                         <label class="form-label">Product Image:</label>
@@ -60,4 +71,5 @@ include_once 'helpers/session_helper.php';
             </form>
         </div>
 </body>
+
 </html>
