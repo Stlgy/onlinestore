@@ -33,7 +33,6 @@ include_once 'helpers/session_helper.php';
                     <textarea rows=2 class="form-control" name="description_p"></textarea>
                     <label class="form-label">Product Category:</label>
                     <input type="text" class="form-control" name="category_p">
-                    <!-- PRODUCT image -->
                 </div>
         <div class="row">
             <div class="col-4">
