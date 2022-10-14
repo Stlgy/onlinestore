@@ -353,3 +353,25 @@ img{
     color:yellow;
     padding:3% 0%;
 }
+.navAdmin {
+    font-family: fantasy;
+    /* background-color: var(--cor2); */
+    font-size: 1.2rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.productMenu{
+    font-family: fantasy;
+    color: #162447;
+}
