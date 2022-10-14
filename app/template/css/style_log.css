@@ -38,7 +38,7 @@
 	/* .company__info{
 		display: none; */
 	}
-	.login_form{
+	.login_form {
 		border-top-left-radius:20px;
 		border-bottom-left-radius:20px;
 	}
@@ -61,6 +61,9 @@ h1{
 }
 .row > h2{
 	color:#0C7B93;
+}
+.availability{
+    color:#00A8CC;
 }
 .signup__form{
     background-color: #1F4068;
@@ -187,6 +190,33 @@ form{
 	box-shadow: 1 0 5px rgba(0,80,80,.4); 
 	border-radius: 4px;
 }
+.form__addproduct{
+    background-color: #1F4068;
+	border-top-right-radius:20px;
+    border-top-left-radius:20px;
+	border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px;
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+   /*  border-bottom: 1px solid #aaa; */
+    width:380px;
+    padding:25px;
+    font-family:sans-serif;
+    display:inline-block;
+    text-align:center;
+}
+.form-label{
+    font-weight: 600;
+    color:#E43F5A;
+    text-align:left;
+    padding:8px;;
+}
+.form-label-p{
+    font-weight: 600;
+    color:#E43F5A;
+    text-align:left;
+    padding:8px;
+}
 .form-message{
     margin: 10px auto 30px auto;
     border-radius: 10px;
@@ -303,7 +333,16 @@ a.btn-pequeno{
     color:#00A8CC;
     font-weight:bolder;
 }
-
+.btn-addproduct{
+    margin:15px;
+    padding:5px;
+    border-radius: 10px;
+    width:100px;
+    background-color:#00A8CC;
+    border:2px solid #1b1b2F;
+    color:#edf7f6;
+    font-weight:bolder;
+}
 .row-submit{
     margin:10px;
     display:inline-block;
@@ -375,3 +414,18 @@ img{
     font-family: fantasy;
     color: #162447;
 }
+/* Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+ */
